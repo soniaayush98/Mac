@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
                 downloadManager=(DownloadManager) getSystemService(DOWNLOAD_SERVICE);
                 Uri uri=Uri.parse("http://montblancmarmores.com.br/wp-content/uploads/2016/06/test-document-pdf.pdf");
                 DownloadManager.Request request= new DownloadManager.Request(uri)
-                        .setTitle("Random file")
+                        .setTitle("new file")
                         .setDescription("Hello").setMimeType("pdf").setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                 downloadManager.enqueue(request);
 
